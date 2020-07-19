@@ -1,0 +1,199 @@
+/*
+Author: Fiona Yang 
+1526-Content Manipulation-Green Energy
+2020-07-18
+*/
+
+/*
+font-family: 'Libre Baskerville', serif;
+font-family: 'Montserrat', sans-serif;
+*/
+
+* {
+	box-sizing: border-box;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+html {   
+    line-height: 1.6rem;  
+    font-size: 1rem;
+    font-family: 'Montserrat', Helvetica, Arial,sans-serif;
+    margin: auto;
+    background:  linear-gradient(to top, rgba(99,156,191,1), rgba(1,33,120,0.5)),url(../img/windmills.jpg) top center no-repeat;
+    background-size: cover;
+    background-color: #68BCDB;  
+    letter-spacing:0.5px;
+}
+
+body {
+    max-width: 80rem;
+    margin: auto;
+}
+
+h4,{
+    margin: 0;
+}
+
+h1 {
+    font-size: 1.8rem;
+    padding: 1rem;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+}
+
+h2 {
+    font-size: 1.8rem;
+    font-weight: 400;  
+    padding: 0 1rem;
+}
+
+header {
+	width: 100%;
+    padding: 3rem;
+    height: 300px;
+    font-family: 'Libre Baskerville',Times, serif;
+    text-align: center;
+}
+
+header h1 {
+	margin: 3rem 0;
+	color: #fff;
+  letter-spacing: 0.5rem;
+}
+
+header nav ul {
+	padding: 0;
+	list-style-type: none;
+}
+
+header nav ul li {
+	display: inline-flex;
+    align-items: center;
+}
+
+a {
+	text-decoration: none;
+    font-weight: 700;
+	transition: 0.2s;
+    color: #fff;
+}
+
+a:hover {
+    color: #68BCDD;
+}
+
+header nav ul li a {
+	margin-right: 2rem;
+    letter-spacing: 2px;
+}
+
+footer {
+    width: 100%;
+	color: #fff;
+    text-align: center;
+    background-color: #fff;
+}
+
+footer a {
+    margin: 1rem;
+    font-size: 0.8rem;
+    color: #A0B56D;
+}
+
+footer p {
+    margin: 0 0 1rem;
+}
+
+footer div:last-child {
+    background-color: #1e2a3c;
+    width: 100%;
+    padding: 1rem;
+    margin-top: 1.5rem;
+}
+
+#active {
+    background-color: #52CEBA;
+    color: #fff;
+    border: none;
+}
+
+#active:hover {
+    background-color: #52CEBA;
+    border: none;
+}
+
+button {
+    border: none;
+    color: #333;
+    background-color: #fff;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0;
+    cursor: pointer;
+}
+
+.new-content {
+    background-color: #fff;
+    padding: 1rem 1rem 3rem;
+    
+}
+
+.line {
+    border-top: 3px solid #eee;
+    width: 90%;
+    margin: auto;
+    padding-bottom: 1.5rem
+}   
+
+/* This is for Responsive effect */
+/*----------MEDIA QUERIES-----------*/
+/*Mobile View */
+@media only screen and (min-width: 30rem) {
+    html {
+        font-size: 0.75rem; 
+    }
+}
+/*Tablet and Desktop View  */
+@media only screen and (min-width: 60rem) {
+    html {
+        font-size: 1rem;   
+    }
+    
+    header {
+        display: flex;
+        align-items: center;
+        padding-left: 10%;
+    }
+    
+    nav {
+        padding: 4rem;
+    }
+    
+    header nav ul li a {
+	      margin-right: 3.5em;
+    }
+    
+    .new-content {
+        padding: 3rem;
+    }
+    
+    .content {
+        display: flex;
+        
+    }
+    
+    .content img {
+        width: 35%;
+        height: auto;
+    }
+    
+    .content p {
+        margin-left: 2rem;
+    }    
+}
